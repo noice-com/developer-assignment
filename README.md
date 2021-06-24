@@ -20,7 +20,7 @@ ChatMessage {
 
 ## Assignments
 
-There are three different types of assigments which you are only going to need to implement one depending on which type of role you where interviewed for.
+There are three different types of assigments which you are only going to need to implement one depending on which type of role you are applying for.
 
 - [Backend](#Backend)
 - [Frontend](#Frontend)
