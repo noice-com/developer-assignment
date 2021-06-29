@@ -1,10 +1,10 @@
 # developer-assignment
 
-Return the assignment as private github repo with access given to github account(s) provided to you by us.
+Please return the assignment as a private Github repo with access given to Github account(s) provided to you by us.
 
 ## Overview
 
-At Noice many of our systems rely on event based (pub/sub) communication. An example of such system is chat. Chat can take many forms from lobby chats with thousands of users to 1-1 chats between two users. For this assignment we are only focusing on the former so building a lobby chat where all users can chat together in a single room.
+At Noice many of our systems rely on event-based (pub/sub) communication. An example of such system is chat. Chat can take many forms from lobby chats with thousands of users to one-to-one chats between users. In this assignment we will only focus on the former where all users can chat together in a single room ("lobby").
 
 ### Example chat message struct
 
@@ -20,11 +20,13 @@ ChatMessage {
 
 ## Assignments
 
-There are three different types of assigments which you are only going to need to implement one depending on which type of role you are applying for.
+There are three different types of assigments:
 
 - [Backend](#Backend)
 - [Frontend](#Frontend)
 - [Fullstack](#Fullstack)
+
+ You only need to implement one of them depending on which type of role you are applying for.
 
 ### Backend
 
@@ -33,27 +35,27 @@ Build a chat backend in which users can join the *lobby chat*, receive list of e
 #### Requirements
 
 - Use Golang
-- Service should be horizontally scalable. In other words it needs to be runnable on multiple instances with different users connecting to different servers. (tip: you can for example use something like Nats or Redis for the service to service communication)
-- Expose an interface usable from a modern browser.
+- Service should be horizontally scalable and it needs to be runnable on multiple instances with different users connecting to different processes (tip: you can for example use something like Nats or Redis for the service to service communication)
+- Expose an interface usable from a modern browser
 - Easy to run two instances of the server and all its dependencies (tip: docker-compose)
-- Doesn't need to be production ready but please follow standard quality practices etc.
+- Doesn't need to be production-ready but please follow standard quality practices
 
 #### Nice to have
 
 - Gracefully shutdown the service
-- Expose metrics using prometheus (just the metrics endpoint, no need to setup Prometheus it self)
+- Expose metrics by using instrumentation for Prometheus (just the metrics endpoint, no need to setup Prometheus itself)
 
 ### Frontend
 
-Build a chat lobby front-end where users can join with a specific username, send and receive messages, and see "user joining" and "user leaving" updates. Mock the server calls, so implement only the frontend.
+Build a chat lobby frontend where users can join with a specific username, send and receive messages, and see "user joining" and "user leaving" updates. Mock the server calls and implement only the frontend.
 
 - Login view
-    - Input for choosing your username (preferrably with validation of username being > 3 characters)
+    - Input for choosing your username (preferably with validation of username being > 3 characters)
     - Join room button
 - Chat lobby view
-    - Feel free to use [WhatsApp](https://www.whatsapp.com/) or [Discord](https://discord.com/) as inspiration.
-    - Messages should preferrably start from the bottom of the view and move up as more messages are added, and should include sender information (such as username), message, and time sent. (Tip: Look at the flexbox API for an easy way to accomplish this)
-    - Clicking on a user should open up a basic profile view for them.
+    - Feel free to use [WhatsApp](https://www.whatsapp.com/) or [Discord](https://discord.com/) as inspiration
+    - Messages should preferrably start from the bottom of the view and move up as more messages are added, and should include sender information (such as username), message, and time sent (tip: look at the flexbox API for an easy way to accomplish this)
+    - Clicking on a user should open up a basic profile view for them
     - If you are feeling really crazy feel free to add a basic/limited emoji picker :D
 - User profile view
     - Limited user profile view with basic but relevant information, such as:
@@ -65,11 +67,11 @@ Build a chat lobby front-end where users can join with a specific username, send
 - Use React
 - Utilize React hooks to manage logic
 - [TypeScript](https://www.typescriptlang.org/) is preferred
-- Styling via [Styled Components](https://styled-components.com/) is preferred.
+- Styling via [Styled Components](https://styled-components.com/) is preferred
 - Easy to run using [yarn](https://yarnpkg.com/)
 - Feel free to use a boilerplate app generation tool like [Create React App](https://github.com/facebook/create-react-app) to get started
 - If you use any additional libraries, please explain why
-- Does not need to be production-ready, but please follow standard quality practices.
+- Doesn't need to be production-ready, but please follow standard quality practices
 - If you feel inspired check out the [Fullstack](#Fullstack) assigment but not a requirement ;)
 
 ### Fullstack
