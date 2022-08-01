@@ -38,7 +38,7 @@ Build a chat backend in which users can join the *lobby chat*, receive list of e
 - Service should be horizontally scalable and it needs to be runnable on multiple instances with different users connecting to different processes (tip: you can for example use something like Nats or Redis for the service to service communication)
 - Expose an interface usable from a modern browser
 - Easy to run two instances of the server and all its dependencies (tip: docker-compose)
-- Doesn't need to be production-ready but please follow standard quality practices
+- Doesn't need to be production-ready but please follow standard quality practices (code structure, testing)
 
 #### Nice to have
 
