@@ -66,8 +66,9 @@ Build a chat lobby frontend where users can join with a specific username, send 
 #### Requirements
 - Use React
 - Utilize React hooks to manage logic
-- [PostCSS](https://postcss.org/) is preferred
-- Styling via [Styled Components](https://styled-components.com/) is preferred
+- Using [TypeScript](https://create-react-app.dev/docs/adding-typescript/) is preferred
+- Styling with [CSS modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) is preferred
+   - [PostCSS](https://postcss.org/) is preferred
 - Easy to run using [yarn](https://yarnpkg.com/)
 - Feel free to use a boilerplate app generation tool like [Create React App](https://github.com/facebook/create-react-app) to get started
 - If you use any additional libraries, please explain why
