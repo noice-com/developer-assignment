@@ -36,7 +36,7 @@ Build a chat backend in which users can join the *lobby chat*, receive list of e
 
 - Use Golang
 - Service should be horizontally scalable and it needs to be runnable on multiple instances with different users connecting to different processes (tip: you can for example use something like Nats or Redis for the service to service communication)
-- Expose an interface usable from a modern browser (these could be WebSockets, REST or if you are feeling wild even WebTransport)
+- Expose an interface usable from a modern browser where clients can receive real time updates (these could be WebSockets, REST or if you are feeling wild even WebTransport). Your API must support streaming for receiving messages and updates.
 - Easy to run two instances of the server and all its dependencies (tip: docker-compose)
 - Doesn't need to be production-ready but please follow standard quality practices (code structure, testing)
 
